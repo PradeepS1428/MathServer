@@ -1,0 +1,27 @@
+<html>
+<body>
+
+<h2>GST BILL CALCULATOR</h2>
+
+<form method="POST">
+    {% csrf_token %}
+
+    Enter Price:
+    <input type="number" name="price" step="any">
+
+    <br><br>
+
+    Enter GST:
+    <input type="number" name="gst" step="any">
+
+    <br><br>
+
+    <button type="submit">Calculate</button>
+</form>
+
+<h3>Price: {{ v }}</h3>
+<h3>GST: {{ s }}%</h3>
+<h3>Total Bill: {{ bill }}</h3>
+
+</body>
+</html>
