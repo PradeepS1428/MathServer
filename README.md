@@ -102,4 +102,4 @@ urlpatterns = [path('', views.gst_bill, name='gst_bill'),]
 ![alt text](<Screenshot (72).png>)
 
 ## RESULT:
-The the web page to calculate Churn Rate using server-side scripts is created successfully.
+The the web page to calculate gst using server-side scripts is created successfully.
