@@ -1,13 +1,16 @@
 # Ex.03 Design a Website for Server Side Processing
-## Date:11.11.2026
+## Date:15.11.2026
 
 ## AIM:
 To create a web page to calculate Churn Rate using server-side scripts.
 
 ## FORMULA:
-Churn Rate = (CustLost / InitCust) * 100
-<br> InitCust --> Initial Customers Count
-<br> CustLost --> Customers Lost Count
+GST Amount = (Price × GST Rate) / 100
+
+<br> Price --> Original Product Price
+<br> GST --> GST Percentage
+
+<br> Total Bill = Price + GST Amount
 
 ## DESIGN STEPS:
 
@@ -90,12 +93,13 @@ from django.urls import path
 from masapp import views
 
 urlpatterns = [path('', views.gst_bill, name='gst_bill'),]
+
 ```
 ## OUTPUT - SERVER SIDE:
-![alt text](<Screenshot (71).png>)
 
+![alt text](<Screenshot (73).png>)
 ## OUTPUT - WEBPAGE:
-![alt text](<Screenshot (70).png>)
+![alt text](<Screenshot (72).png>)
 
 ## RESULT:
 The the web page to calculate Churn Rate using server-side scripts is created successfully.
