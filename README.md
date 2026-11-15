@@ -2,7 +2,7 @@
 ## Date:15.11.2026
 
 ## AIM:
-To create a web page to calculate Churn Rate using server-side scripts.
+To create a web page to calculate gst using server-side scripts.
 
 ## FORMULA:
 GST Amount = (Price × GST Rate) / 100
