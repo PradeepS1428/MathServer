@@ -47,7 +47,6 @@ Publish the website in Localhost.
 
 \<html> \<head>     \<title>Churn Rate Calculator\</title> \</head> \<body>
 
-```
 <h2>Churn Rate Calculator</h2>
 
 <form method="POST">
@@ -69,7 +68,6 @@ Publish the website in Localhost.
     <h3>Customers Lost: {{ s }}</h3>
     <h3>Churn Rate: {{ churn }}%</h3>
 {% endif %}
-```
 
 \</body> \</html>
 
