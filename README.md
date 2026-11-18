@@ -43,38 +43,33 @@ Publish the website in Localhost.
 
 ## PROGRAM:
 ```
-\<!DOCTYPE html>
+<html> 
+<head>
+    <title>Churn Rate Calculator</title>
+</head>
+<body>
+    <h2>Churn Rate Calculator</h2>
 
-\<html> \<head>     \<title>Churn Rate Calculator\</title> \</head> \<body>
+    <form method="POST">
+      {% csrf_token %}
 
-```
-<h2>Churn Rate Calculator</h2>
-
-<form method="POST">
-    {% csrf_token %}
-
-    <label>Initial Customers Count:</label>
-    <input type="number" name="InitCust" required>
+      <label>Initial Customers Count:</label>
+    <input type="number" name="InitCust">
     <br><br>
 
     <label>Customers Lost Count:</label>
-    <input type="number" name="CustLost" required>
+    <input type="number" name="CustLost">
     <br><br>
 
     <button type="submit">Calculate Churn Rate</button>
-</form>
+    </form>
+    <h3>Churn Rate: {{ churn_rate }}%</h3>
 
-{% if request.method == 'POST' %}
-    <h3>Initial Customers: {{ v }}</h3>
-    <h3>Customers Lost: {{ s }}</h3>
-    <h3>Churn Rate: {{ churn }}%</h3>
-{% endif %}
-```
 
-\</body> \</html>
+</body> 
+</html>
 
 views.py
-
 
 from django.shortcuts import render
 
@@ -91,7 +86,7 @@ def churn_rate(request):
     return render(request, 'masapp/math.html', {
         'v': v,
         's': s,
-        'churn': churn
+        'churn_rate': churn
     })
 
 urls.py
@@ -106,10 +101,10 @@ urlpatterns = [
 ```
 
 ## OUTPUT - SERVER SIDE:
-![alt text](<Screenshot 2026-11-17 114824.png>)
+
 
 ## OUTPUT - WEBPAGE:
 
-![alt text](<Screenshot 2026-11-17 114811.png>)
+
 ## RESULT:
 The the web page to calculate Churn Rate using server-side scripts is created successfully.

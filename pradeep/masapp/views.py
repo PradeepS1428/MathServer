@@ -16,5 +16,5 @@ def churn_rate(request):
     return render(request, 'masapp/math.html', {
         'v': v,
         's': s,
-        'churn': churn
+        'churn_rate': churn
     })
