@@ -63,7 +63,7 @@ Publish the website in Localhost.
 
     <button type="submit">Calculate Churn Rate</button>
     </form>
-    <h3>Churn Rate: {{ churn_rate }}%</h3>
+    <h3>{{ churn_rate }}%</h3>
 
 
 </body> 
@@ -102,9 +102,9 @@ urlpatterns = [
 
 ## OUTPUT - SERVER SIDE:
 
-![alt text](<Screenshot 2026-11-18 195433.png>)
+![alt text](<Screenshot 2026-11-20 170343.png>)
 ## OUTPUT - WEBPAGE:
-![alt text](<Screenshot 2026-11-18 195418.png>)
+![alt text](<Screenshot 2026-11-20 170326.png>)
 
 ## RESULT:
 The the web page to calculate Churn Rate using server-side scripts is created successfully.
