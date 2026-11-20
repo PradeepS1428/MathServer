@@ -18,3 +18,4 @@ def churn_rate(request):
         's': s,
         'churn_rate': churn
     })
+    

@@ -8,16 +8,17 @@
     <form method="POST">
       {% csrf_token %}
 
-      <label>Initial Customers Count:</label>
+      <label>Initial Customer:</label>
     <input type="number" name="InitCust">
     <br><br>
 
-    <label>Customers Lost Count:</label>
+    <label>Customers Lost:</label>
     <input type="number" name="CustLost">
     <br><br>
 
-    <button type="submit">Calculate Churn Rate</button>
-    </form>
+    <button type="submit">Calculate</button>
 
+    </form>
+    <h3>{{ churn_rate }}%</h3>
 </body> 
 </html>
